@@ -11,44 +11,59 @@
 <body class="text-white text-xl">
     <div>
         <div>
-            <header class="flex bg-head">
-                <div class="flex pl-20 m-5">
-                    <a class="flex" href="react.com"><img class="pt-2 imgg"
+            <header class="flex bg-head px-2 py-5 fixed lg:static">
+                <div class="flex lg:pl-20 px-5 ">
+                    <a class="flex" href="react.com"><img class="imgg"
                             src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K"
                             alt="" height="20" />
-                        <span class="font-bold text-bluee sm:hidden lg:block">React</span></a>
+                        <span class="font-bold text-bluee hidden  lg:block lg:pl-2">React</span></a>
                 </div>
 
-                <nav class="flex">
-                    <div class="flex pl-20 m-5 font-light">
-                        <a href="#" class="pl-5">Docs</a>
-                        <a href="#" class="pl-8">Tutorial</a>
-                        <a href="#" class="pl-8">Blog</a>
-                        <a href="#" class="pl-8">Community</a>
+                <nav class="flex overflow-x-scroll lg:overflow-x-auto lg:pl-10 lg:ml-10 py-">
+                    <div class="flex font-light  text-base lg:text-lg lg:pl-7">
+                        <a href="#" class="lg:pl-5 hover:text-bluee transition ease-out duration-1000">Docs</a>
+                        <a href="#" class="lg:pl-8 pl-3 hover:text-bluee transition ease-out duration-1000">Tutorial</a>
+                        <a href="#" class="lg:pl-8 pl-3 hover:text-bluee transition ease-out duration-1000">Blog</a>
+                        <a href="#" class="lg:pl-8 pl-3 hover:text-bluee transition ease-out duration-1000">Community</a>
                     </div>
-                    <div class="pl-20 m-5 text-black sm:hidden lg:block"><input class="bg-gray-600 rounded" placeholder="Search" type="text" name="" id=""></div>
-
-                    <div class="flex pl-5 my-5 mr-5">
-                        <a href="#" class="pl- pr-4 text-sm pt-2 sm:hidden lg:block">v18.2.0</a>
-                        <svg class="fill-white mr-2 mt-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                viewBox="0 0 24 24">
-                                <path d="M0 0h24v24H0z" fill="none"></path>
-                                <path
-                                    d=" M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z "
-                                    class="css-c4d79v"></path>
-                            </svg>
-                        <a class="flex pl-1 text-sm pt-2 sm:hidden lg:block" href="#">Languages</a>
-                        <a href="#" class="pl-5 text-sm pt-2 sm:hidden lg:block">GitHub</a>
-                    </div>
-                    <div></div>
                 </nav>
+
+                <div class="lg:pl-20  ml-4 text-black  lg:flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 pr-1 pt-" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                    <input class="bg-head rounded hidden lg:block" placeholder="Search" type="text" name="" id="">
+                </div>
+
+                <div class="flex pl-5  mr-5">
+                    <a href="#" class="pl- pr-4 text-sm pt-2 hidden lg:block hover:text-bluee">v18.2.0</a>
+                    <svg class="fill-white mr-5 mt-2 hover:text-bluee block" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path
+                            d=" M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z "
+                            class="css-c4d79v"></path>
+                    </svg>
+                    <a class="pl-1 text-sm pt-2 hidden lg:flex hover:text-bluee" href="#" >Languages</a>
+                    <a href="#" class="pl-5 text-sm pt-2 hidden lg:block hover:text-bluee">GitHub <svg x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="css-83uoqv inline-block "><path fill="currentColor" d="
+                        M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
+                        0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
+                      "></path><polygon fill="currentColor" points="
+                        45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
+                        14.9 62.8,22.9 71.5,22.9
+                        "></polygon></svg></a>
+                </div>
+                <div></div>
+
             </header>
-            <div class="bg-bodyblack">
-                <div>
-                    <h1 class="text-center text-6xl pt-10 font-bold text-bluee sm:hidden lg:block">
+            <div class="bg-bodyblack mt-0">
+                <div class="div1">
+                    <h1 class="text-center lg:text-6xl pt-7 font-bold text-bluee text-3xl">
                         React
                     </h1>
-                    <p class="text-center lg:text-3xl pt-5 sm:text-base ">
+                    <p class="text-center lg:text-3xl pt-5 px-28 font-thin text-lg ">
                         A JavaScript libary for building user interfaces
                     </p>
                 </div>
@@ -58,15 +73,20 @@
                             Started</button>
                     </div>
                     <div class="pt-2">
-                        <a href="#" class="pl-5 text-bluee text-lg">Take The Tutorial</a>
+                        
+                        <a href="#" class="pl-5 text-bluee text-lg hover:text-white transition ease-out duration-1000 ">Take The Tutorial <svg height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.53657 8.69699" class="css-b7q1rs inline-block  mb-1 ml-2"><path d="
+                            M.18254,8.697a.18149.18149,0,0,1-.12886-.31034L4.09723,4.34126.05369.29954a.18149.18149,
+                            0,0,1,.2559-.2559L4.4838,4.21785a.18149.18149,0,0,1,0,.2559L.30958,8.648A.18149.18149,
+                            0,0,1,.18254,8.697Z
+                          " fill="currentColor"></path></svg></a>
                     </div>
                 </div>
             </div>
         </div>
         <div>
-            <section>
-                <div class=" lg:grid grid-cols-3 sm:flex">
-                    <div class="text-black mt-32 mx-5 pl-20 mb-14">
+            <section class="overflow-x-scroll lg:overflow-x-auto">
+                <div class=" flex lg:grid lg:grid-cols-3 w-[300%] lg:w-full">
+                    <div class="text-black mt-32 px-5 pl- mb-14 lg:pl-20 w-full">
                         <h3 class="pb-5 text-h3color text-xl">Declarative</h3>
                         <p class="text-lg">
                             React makes it painless to create interactive UIs. Design simple
@@ -74,7 +94,7 @@
                             efficiently update and render just the right components when
                             your data changes.
                         </p>
-                        <p class="pt-10 text-lg">
+                        <p class="pt-10 text-lg ">
                             Declarative views make your code more predictable and easier to
                             debug.
                         </p>
@@ -101,19 +121,19 @@
                             stack, so you can develop new features in React without
                             rewriting existing code.
                         </p>
-                        <p class="pt-10 text-lg">
+                        <p class="pt-10 text-lg pb-5">
                             React can also render on the server using Node and power mobile
-                            apps using React Native.
+                            apps using <code class="bg-blue-100 font-thin">React Native.</code>
                         </p>
                     </div>
                 </div>
 
-                <hr class="m-auto w-96">
+                <hr class="m-auto w-96 p-">
             </section>
             <section class="pb-16">
-                <div class="text-black  pl-20 pr-10 lg:grid grid-cols-3 sm:block ">
-                    <div class="text-black mt-24 mx-5 col-span-1">
-                        <h3 class="mb-6 font-bold text-h3 text-2xl">A Simple Component</h3>
+                <div class="text-black lg:grid grid-cols-3">
+                    <div class="text-black mt-24 mx-5 col-span-1 lg:pl-20 pr-10 ">
+                        <h3 class="mb-6 font-bold text-h3 text-2xl ">A Simple Component</h3>
                         <p class="text-base font-normal leading-7">
                             React components implement a
                             <code class="bg-codecolor"> render()</code> method that takes
@@ -132,11 +152,11 @@
                         </p>
                     </div>
                     <div class="col-span-2 mt-16 mx-5">
-                        <img src="./WhatsApp Image 2022-06-27 at 5.54.10 AM.jpeg" alt="" class="img2 rounded-md" />
+                        <img src="./WhatsApp Image 2022-06-27 at 5.54.10 AM.jpeg" alt="" class="img3 rounded-md" />
                     </div>
                 </div>
-                <div class="text-black  pl-20 pr-10 lg:grid grid-cols-3 sm:block">
-                    <div class="text-black mt-24 mx-5 col-span-1">
+                <div class="text-black   lg:grid grid-cols-3 ">
+                    <div class="text-black mt-24 mx-5 col-span-1 lg:pl-20 pr-10">
                         <h3 class="mb-6 font-bold text-h3 text-2xl">A Stateful Component</h3>
                         <p class="text-base font-normal leading-7">
                             In addition to taking input data (accessed via <code
@@ -150,8 +170,8 @@
                         <img src="./WhatsApp Image 2022-06-27 at 5.54.10 AM.jpeg" alt="" class="img2 rounded-md" />
                     </div>
                 </div>
-                <div class="text-black  pl-20 pr-10 lg:grid grid-cols-3 sm:block">
-                    <div class="text-black mt-24 mx-5 col-span-1">
+                <div class="text-black  lg:grid grid-cols-3">
+                    <div class="text-black mt-24 mx-5 col-span-1 lg:pl-20 pr-10">
                         <h3 class="mb-6 font-bold text-h3 text-2xl">An Application</h3>
                         <p class="text-base font-normal leading-7">
                             Using
@@ -166,8 +186,8 @@
                         <img src="./WhatsApp Image 2022-06-27 at 5.54.10 AM.jpeg" alt="" class="img2 rounded-md" />
                     </div>
                 </div>
-                <div class="text-black  pl-20 pr-10 lg:grid grid-cols-3 sm:block">
-                    <div class="text-black mt-24 mx-5 col-span-1">
+                <div class="text-black   lg:grid grid-cols-3">
+                    <div class="text-black mt-24 mx-5 col-span-1 lg:pl-20 pr-10">
                         <h3 class="mb-6 font-bold text-h3 text-2xl">A Component Using External Plugins</h3>
                         <p class="text-base font-normal leading-7">
                             React allows you to interface with other libraries and frameworks. This example uses
@@ -180,78 +200,164 @@
                     </div>
                 </div>
             </section>
-            <section class="text-black bg-linkback ">
+            <section class="text-black bg-linkback">
                 <div class="flex justify-center">
                     <div class="p-6">
                         <a href="#"></a><button class="btn pb-2 hover:bg-white transition ease-out duration-1000">Get
                             Started</button>
                     </div>
                     <div class="pt-8">
-                        <a href="#" class="pl-2 text-bluee text-lg hover:text-white transition ease-out duration-1000">Take The Tutorial</a>
+                        <a href="#"
+                            class="pl-2 text-bluee text-lg hover:text-white transition ease-out duration-1000">Take The
+                            Tutorial <svg height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.53657 8.69699" class="css-b7q1rs inline-block  mb-1 ml-2"><path d="
+                                M.18254,8.697a.18149.18149,0,0,1-.12886-.31034L4.09723,4.34126.05369.29954a.18149.18149,
+                                0,0,1,.2559-.2559L4.4838,4.21785a.18149.18149,0,0,1,0,.2559L.30958,8.648A.18149.18149,
+                                0,0,1,.18254,8.697Z
+                              " fill="currentColor"></path></svg></a>
                     </div>
                 </div>
             </section>
             <section class="text-black bg-footercolor">
-                <div class="flex">
-                    <div class="pl-20 sm:hidden lg:block">
-                       <a href="#"><img src="./react image.png" alt="" class="fb mt-10 ">
-                 </a>                         <p class="text-facebook pt-3 text-base">Copyright © 2022 Meta Platforms, Inc.</p>
+                <div class="lg:grid lg:grid-cols-3 flex">
+                    <div class="pl-20 hidden lg:block">
+                        <a href="#"><img src="./react image.png" alt="" class="fb mt-10 ">
+                        </a>
+                        <p class="text-facebook pt-3 text-base">Copyright © 2022 Meta Platforms, Inc.</p>
                     </div>
-                    <div class="text-white pt-10 pl-52 sm:pl-8">
+                    <div class="text-white pl-8 pt-10 lg:pt-10 lg:pl- ">
                         <p class="text-facebook text-sm font-bold">DOCS</p>
                         <ul class="text-base">
                             <li class="pt-5 pb-2 hover:text-bluee"><a href="#">Installation</a></li>
-                            <li class="py- hover:text-bluee"><a href="#">Main Concepts</a></li>
-                            <li class="py-2 hover:text-bluee"><a href="#">Advanced Guides</a></li>
-                            <li class="py- hover:text-bluee"><a href="#">API Reference</a></li>
-                            <li class="py-2 hover:text-bluee"><a href="#">Hooks</a></li>
-                            <li class="py- hover:text-bluee"><a href="#">Testing</a></li>
-                            <li class="py-2 hover:text-bluee"><a href="#">Contributing</a></li>
-                            <li class="hover:text-bluee"><a href="#">FAQ</a></li>
+                            <li class="py- hover:text-bluee "><a href="#">Main Concepts</a></li>
+                            <li class="py-2 hover:text-bluee "><a href="#">Advanced Guides</a></li>
+                            <li class="py- hover:text-bluee "><a href="#">API Reference</a></li>
+                            <li class="py-2 hover:text-bluee "><a href="#">Hooks</a></li>
+                            <li class="py- hover:text-bluee "><a href="#">Testing</a></li>
+                            <li class="py-2 hover:text-bluee "><a href="#">Contributing</a></li>
+                            <li class="hover:text-bluee "><a href="#">FAQ</a></li>
                         </ul>
                     </div>
-            
-                        <div class="text-white pt-10  pl-60 sm:pr-8">
-                            <p class="text-facebook text-sm font-bold">CHANNELS</p>
-                            <ul class="text-base">
-                                <li class="pt-5 pb-2 hover:text-bluee"><a href="#">GitHub</a></li>
-                                <li class="py- hover:text-bluee"><a href="#">Stack Overflow</a></li>
-                                <li class="py-2 hover:text-bluee"><a href="#">Discussion Forums</a></li>
-                                <li class="py- hover:text-bluee"><a href="#">Reactiflux Chat</a></li>
-                                <li class="py-2 hover:text-bluee"><a href="#">DEV Community</a></li>
-                                <li class="py- hover:text-bluee"><a href="#">Facebook</a></li>
-                                <li class="py-2 hover:text-bluee"><a href="#">Twitter</a></li>
-                                <li class="hover:text-bluee"><a href="#">FAQ</a></li>
-                            </ul>
-    
-                        </div>
-                    
-                    
-                </div>
-                
-                    <div class=" lg:flex justify-center pb-16 sm:justify-start">
-                            <div class="text-white pl-80 pt-12 sm:pl-8 ">
-                                <p class="text-facebook text-sm font-bold">COMMUNITY</p>
-                                <ul class="text-base">
-                                    <li class="pt-5 pb-2 hover:text-bluee"><a href="#">Code of Conduct</a></li>
-                                    <li class="py- hover:text-bluee"><a href="#">Commnity Resources</a></li>
-                                </ul>
-                            </div>
-                            <div class="text-white pt-12  pl-60 pr-10 pb- sm:pl-52" >
-                                <p class="text-facebook text-sm font-bold">MORE</p>
-                                <ul class="text-base">
-                                    <li class="pt-5 pb-2 hover:text-bluee"><a href="#">Tutorials</a></li>
-                                    <li class="py- hover:text-bluee"><a href="#">Blog</a></li>
-                                    <li class="py-2 hover:text-bluee"><a href="#">Acknowledgements</a></li>
-                                    <li class="py- hover:text-bluee"><a href="#">React Native</a></li>
-                                    <li class="py-2 hover:text-bluee"><a href="#">Privacy</a></li>
-                                    <li class="py- hover:text-bluee"><a href="#">Terms</a></li>
-                                    
-                                </ul>
-                            </div>
+
+                    <div class="text-white  pt-10 pl-16 lg:pt-10 lg:pl-0">
+                        <p class="text-facebook text-sm font-bold">CHANNELS</p>
+                        <ul class="text-base">
+                            <li class="pt-5 pb-2 hover:text-bluee"><a href="#">GitHub <svg x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="css-83uoqv inline-block"><path fill="currentColor" d="
+                                M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
+                                0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
+                              "></path><polygon fill="currentColor" points="
+                                45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
+                                14.9 62.8,22.9 71.5,22.9
+                                "></polygon></svg></a></li>
+                            <li class="py- hover:text-bluee"><a href="#">Stack Overflow <svg x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="css-83uoqv inline-block"><path fill="currentColor" d="
+                                M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
+                                0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
+                              "></path><polygon fill="currentColor" points="
+                                45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
+                                14.9 62.8,22.9 71.5,22.9
+                                "></polygon></svg></a></li>
+                            <li class="py-2 hover:text-bluee"><a href="#">Discussion Forums <svg x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="css-83uoqv inline-block"><path fill="currentColor" d="
+                                M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
+                                0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
+                              "></path><polygon fill="currentColor" points="
+                                45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
+                                14.9 62.8,22.9 71.5,22.9
+                                "></polygon></svg></a></li>
+                            <li class="py- hover:text-bluee"><a href="#">Reactiflux Chat <svg x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="css-83uoqv inline-block"><path fill="currentColor" d="
+                                M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
+                                0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
+                              "></path><polygon fill="currentColor" points="
+                                45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
+                                14.9 62.8,22.9 71.5,22.9
+                                "></polygon></svg></a></li>
+                            <li class="py-2 hover:text-bluee"><a href="#">DEV Community <svg x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="css-83uoqv inline-block"><path fill="currentColor" d="
+                                M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
+                                0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
+                              "></path><polygon fill="currentColor" points="
+                                45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
+                                14.9 62.8,22.9 71.5,22.9
+                                "></polygon></svg></a></li>
+                            <li class="py- hover:text-bluee"><a href="#">Facebook <svg x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="css-83uoqv inline-block"><path fill="currentColor" d="
+                                M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
+                                0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
+                              "></path><polygon fill="currentColor" points="
+                                45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
+                                14.9 62.8,22.9 71.5,22.9
+                                "></polygon></svg></a></li>
+                            <li class="py-2"><a class="hover:text-bluee" href="#">Twitter <svg x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="css-83uoqv inline-block"><path fill="currentColor" d="
+                                M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
+                                0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
+                              "></path><polygon fill="currentColor" points="
+                                45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
+                                14.9 62.8,22.9 71.5,22.9
+                                "></polygon></svg></a></li>
+
+                        </ul>
+
                     </div>
+
+
+                </div>
+
+                <div class="lg:grid lg:grid-cols-3 flex">
+                    <div class="hidden lg:block"></div>
+                    <div class="text-white  pt-12 pl-8  lg:pt-10 lg:pl-">
+                        <p class="text-facebook text-sm font-bold">COMMUNITY</p>
+                        <ul class="text-base">
+                            <li class="pt-5 pb-2 hover:text-bluee"><a href="#">Code of Conduct <svg x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="css-83uoqv inline-block"><path fill="currentColor" d="
+                                M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
+                                0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
+                              "></path><polygon fill="currentColor" points="
+                                45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
+                                14.9 62.8,22.9 71.5,22.9
+                                "></polygon></svg></a></li>
+                            <li class="py- hover:text-bluee"><a href="#">Commnity Resources</a></li>
+                        </ul>
+                    </div>
+                    <div class="text-white pt-12 pl-10  lg:pt-10 lg:pl-0 lg:pb-10">
+                        <p class="text-facebook text-sm font-bold">MORE</p>
+                        <ul class="text-base">
+                            <li class="pt-5 pb-2 hover:text-bluee"><a href="#">Tutorials</a></li>
+                            <li class="py- hover:text-bluee"><a href="#">Blog</a></li>
+                            <li class="py-2 hover:text-bluee"><a href="#">Acknowledgements</a></li>
+                            <li class="py- hover:text-bluee"><a href="#">React Native <svg x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="css-83uoqv inline-block"><path fill="currentColor" d="
+                                M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
+                                0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
+                              "></path><polygon fill="currentColor" points="
+                                45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
+                                14.9 62.8,22.9 71.5,22.9
+                                "></polygon></svg></a></li>
+                            <li class="py-2 hover:text-bluee"><a href="#">Privacy <svg x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="css-83uoqv inline-block"><path fill="currentColor" d="
+                                M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
+                                0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
+                              "></path><polygon fill="currentColor" points="
+                                45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
+                                14.9 62.8,22.9 71.5,22.9
+                                "></polygon></svg></a></li>
+                            <li class="py- hover:text-bluee"><a href="#">Terms <svg x="0px" y="0px"
+                                        viewBox="0 0 100 100" width="15" height="15" class="css-83uoqv inline-block">
+                                        <path fill="currentColor" d="
+                                    M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
+                                    0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
+                                  "></path>
+                                        <polygon fill="currentColor" points="
+                                    45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
+                                    14.9 62.8,22.9 71.5,22.9
+                                    "></polygon>
+                                    </svg></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="pl-20  lg:hidden pb-14 ">
+                        <a href="#"><img src="./react image.png" alt="" class="fb mt-10 ">
+                        </a>
+                        <p class="text-facebook pt-3 text-base">Copyright © 2022 Meta Platforms, Inc.</p>
+                    </div>
+
             </section>
         </div>
+
     </div>
 </body>
 

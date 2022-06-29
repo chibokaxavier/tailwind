@@ -6,7 +6,7 @@
 }
 
 .btn { 
-@apply bg-bluee text-black  p-2 w-36 h-12 text-lg;
+@apply bg-bluee text-black w-36 h-12 text-lg;
 
 }
 
